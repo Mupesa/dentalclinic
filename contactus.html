@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--custom css-->
+    <link rel="stylesheet" href="stylesheet.css">
+ 
+    <title>Contact Us - BrightSmile Clinic</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <span class="brand-icon">✨</span>
+          <span class="brand-text">BrightSmile</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_info">Contact Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact_form">Send Message</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#location">Location</a>
+            </li>
+          </ul>
+          <a class="contact-btn" href="services.html" style="margin-right: .5rem;">Services</a>
+          <a class="contact-btn" href="history.html" style="margin-right: .5rem;">History</a>
+          <a class="contact-btn" href="emergencies.html" style="margin-right: .5rem;">Emergencies</a>
+          <button class="contact-btn">Contact Us</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section>
+      <header id="home">
+            <div class="welcome">Get In Touch</div>
+            <div class="motto">
+                <h1>We'd Love to Hear From You</h1>
+            </div>
+            <div class="container">Have questions about our services? Ready to book an appointment? Get in touch with our friendly team and we'll be happy to help.</div>
+            <div class="buttons">
+                <button type="button">Contact Form</button>
+                <button type="button">Call Us</button>
+            </div>
+        </header>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact_info">
+        <div class="contact-section-wrapper">
+            <h1>Contact Information</h1>
+            <h2>Multiple Ways to Reach Us</h2>
+            <h3>Whether you prefer to call, email, or visit us in person, we're here to assist you with all your dental needs.</h3>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Phone support">
+              <div class="card-body">
+                <h5 class="card-title">Call Us</h5>
+                <p class="card-text"><strong>Phone:</strong> (555) 123-4567<br>
+                <strong>Hours:</strong> Mon-Fri 9AM-5PM<br>
+                Sat 10AM-2PM<br>
+                Sunday - Closed</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Email support">
+              <div class="card-body">
+                <h5 class="card-title">Email Us</h5>
+                <p class="card-text"><strong>Email:</strong> info@brightsmile.com<br>
+                <strong>For Emergencies:</strong> emergency@brightsmile.com<br>
+                <strong>Response Time:</strong> Within 24 hours</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Office location">
+              <div class="card-body">
+                <h5 class="card-title">Visit Us</h5>
+                <p class="card-text"><strong>Address:</strong> 123 Smile Street<br>
+                Dental City, DC 12345<br>
+                <strong>Located:</strong> Next to Central Park<br>
+                Free Parking Available</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Appointment booking">
+              <div class="card-body">
+                <h5 class="card-title">Book Online</h5>
+                <p class="card-text"><strong>Book 24/7</strong> using our online scheduling system<br>
+                <strong>Instant Confirmation</strong> via email and SMS<br>
+                <strong>Easy Rescheduling</strong> anytime</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact_form">
+        <div class="appointment_container">
+            <h1>Send Us a Message</h1>
+            <h2>We'll respond as soon as possible</h2>
+            <p class="intro-text">Have a question or need more information? Fill out the form below and our team will get back to you promptly.</p>
+
+            <form id="contactForm" class="appointment-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(555) 123-4567">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="What is this about?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="6" placeholder="Tell us more about your inquiry..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Interested In</label>
+                    <select class="form-control" id="service">
+                        <option value="">Select a service...</option>
+                        <option value="general">General Check-up</option>
+                        <option value="cleaning">Professional Cleaning</option>
+                        <option value="whitening">Teeth Whitening</option>
+                        <option value="implants">Dental Implants</option>
+                        <option value="orthodontics">Orthodontics</option>
+                        <option value="cosmetic">Cosmetic Dentistry</option>
+                        <option value="emergency">Emergency Care</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why_choose">
+        <div class="why-choose-wrapper">
+            <h1>Why Choose BrightSmile?</h1>
+            <h2>We're committed to your satisfaction and comfort</h2>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Expert team">
+              <div class="card-body">
+                <h5 class="card-title">Expert Team</h5>
+                <p class="card-text">Our dentists have over 15 years of combined experience delivering exceptional care with the latest techniques.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Modern technology">
+              <div class="card-body">
+                <h5 class="card-title">Modern Technology</h5>
+                <p class="card-text">We use state-of-the-art dental equipment and technology to ensure the best possible outcomes for our patients.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Patient comfort">
+              <div class="card-body">
+                <h5 class="card-title">Patient Comfort</h5>
+                <p class="card-text">Your comfort is our priority. We offer pain-free treatments and a relaxing environment for all our patients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+        <div class="location-wrapper">
+            <h1>Visit Our Clinic</h1>
+            <h2>Conveniently Located in the Heart of Dental City</h2>
+            <h3>Our modern facility is designed to provide you with the most comfortable dental experience possible.</h3>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Clinic exterior">
+              <div class="card-body">
+                <h5 class="card-title">Our Clinic</h5>
+                <p class="card-text">A modern, welcoming facility equipped with the latest dental technology and staffed by friendly professionals dedicated to your care.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="assets/img1/health/consultation-3.webp" class="card-img-top" alt="Waiting room">
+              <div class="card-body">
+                <h5 class="card-title">Comfortable Waiting Area</h5>
+                <p class="card-text">Relax in our comfortable waiting area while you prepare for your appointment. Complimentary refreshments available.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>About BrightSmile</h4>
+                    <p>We're dedicated to providing exceptional dental care and helping our patients achieve healthy, beautiful smiles.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">fb</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">tw</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="emergencies.html">Emergencies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">General Check-up</a></li>
+                        <li><a href="#">Teeth Cleaning</a></li>
+                        <li><a href="#">Whitening</a></li>
+                        <li><a href="#">Dental Implants</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@brightsmile.com</p>
+                    <p><strong>Address:</strong> 123 Smile Street, Dental City, DC 12345</p>
+                    <p><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrightSmile Dental Clinic. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

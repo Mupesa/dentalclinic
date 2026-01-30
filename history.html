@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="stylesheet.css">
+		<title>BrightSmile | Dental History</title>
+</head>
+<body>
+		<!-- Navbar (same design as index) -->
+		<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#home">
+					<span class="brand-icon">✨</span>
+					<span class="brand-text">BrightSmile</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto gap-2">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#About">Overview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#featured_services">Milestones</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#our_team">Pioneers</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#gallery_section">Gallery</a>
+						</li>
+					</ul>
+					<a class="contact-btn" href="index.html" style="margin-right: .5rem;">Home</a>
+					<a class="contact-btn" href="#appointment_section">Book Now</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero header -->
+		<section>
+			<header id="home" style="background-image: linear-gradient(180deg, rgba(13,110,253,.6), rgba(13,110,253,.35)), url('assets/img/hero-carousel/hero-carousel-2.jpg');">
+				<div class="welcome">Journey Through Dental History</div>
+				<div class="motto">
+					<h1>From Ancient Practices to Modern Smiles</h1>
+				</div>
+				<div class="container">Explore how dentistry evolved through innovation, dedication, and care—from early tooth treatments to today’s advanced techniques.</div>
+				<div class="buttons">
+					<a href="#featured_services" class="btn btn-success" style="border-radius:999px; font-weight:600;">View Milestones</a>
+					<a href="#gallery_section" class="btn btn-outline-light" style="border-radius:999px; font-weight:600;">Browse Gallery</a>
+				</div>
+			</header>
+		</section>
+
+		<!-- Overview (reuse About section styling) -->
+		<section id="About">
+			<h1>Dental History</h1>
+			<h2>A timeline of care, tools, and discoveries</h2>
+			<h3>Dental care spans centuries—from herbal remedies and early extractions to anesthesia, fluoridation, implants, and digital dentistry. These milestones shaped safer procedures, brighter smiles, and better health outcomes.</h3>
+
+			<!-- Intro cards using existing gallery images -->
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card">
+						<img src="assets/img/gallery/gallery-1.jpg" class="card-img-top" alt="Early dental tools and practices">
+						<div class="card-body">
+							<h5 class="card-title">Early Practices</h5>
+							<p class="card-text">From ancient remedies to early extractions—foundations of dental care began with basic tools and community knowledge.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="assets/img/gallery/gallery-2.jpg" class="card-img-top" alt="Dental care and cleaning">
+						<div class="card-body">
+							<h5 class="card-title">Prevention Emerges</h5>
+							<p class="card-text">Routine cleaning, hygiene, and patient education reduced decay and improved long-term oral health.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card">
+						<img src="assets/img/gallery/gallery-3.jpg" class="card-img-top" alt="Modern dental instruments">
+						<div class="card-body">
+							<h5 class="card-title">Modern Instruments</h5>
+							<p class="card-text">Precision tools and safer materials transformed patient experience and treatment outcomes.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Milestones (reuse Featured Services styling) -->
+		<section class="featured_services">
+			<div id="featured_services">
+				<h1>Key Milestones in Dentistry</h1>
+				<h2>Innovations that shaped patient care</h2>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card">
+							<img src="assets/img/gallery/gallery-4.jpg" class="card-img-top" alt="Anesthesia in dentistry">
+							<div class="card-body">
+								<h5 class="card-title">Introduction of Anesthesia</h5>
+								<p class="card-text">Pain control allowed complex procedures with comfort and safety.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="assets/img/gallery/gallery-5.jpg" class="card-img-top" alt="Fluoridation and prevention">
+							<div class="card-body">
+								<h5 class="card-title">Fluoridation</h5>
+								<p class="card-text">Community health improved with caries prevention and better hygiene.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="assets/img/gallery/gallery-6.jpg" class="card-img-top" alt="Dental implants">
+							<div class="card-body">
+								<h5 class="card-title">Implants & Restorations</h5>
+								<p class="card-text">Biocompatible materials restored function and aesthetics reliably.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="assets/img/gallery/gallery-7.jpg" class="card-img-top" alt="Orthodontics and alignment">
+							<div class="card-body">
+								<h5 class="card-title">Orthodontics</h5>
+								<p class="card-text">Alignment advances improved bite, function, and smile confidence.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="assets/img/gallery/gallery-8.jpg" class="card-img-top" alt="Digital dentistry and imaging">
+							<div class="card-body">
+								<h5 class="card-title">Digital Dentistry</h5>
+								<p class="card-text">Imaging and CAD/CAM enable precise, efficient, patient-centered care.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<img src="assets/img/gallery/gallery-3.jpg" class="card-img-top" alt="Prevention and hygiene">
+							<div class="card-body">
+								<h5 class="card-title">Preventive Care</h5>
+								<p class="card-text">Regular cleanings and education significantly reduced dental disease.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pioneers (reuse Our Team styling) -->
+		<div id="our_team">
+			<h1>Pioneers in Dentistry</h1>
+			<h2>Professionals who advanced the field</h2>
+			<div class="card-group">
+				<div class="card">
+					<img src="assets/img/doctors/doctors-1.jpg" class="card-img-top" alt="Portrait of an early dental pioneer">
+					<div class="card-body">
+						<h5 class="card-title">Innovator & Educator</h5>
+						<p class="card-text">Advocated for patient-centered treatments and safer clinical protocols.</p>
+						<p class="card-text"><small class="text-muted">Historical profile</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="assets/img/doctors/doctors-2.jpg" class="card-img-top" alt="Portrait of a modern dental specialist">
+					<div class="card-body">
+						<h5 class="card-title">Materials Researcher</h5>
+						<p class="card-text">Advanced restorative materials and minimally invasive techniques.</p>
+						<p class="card-text"><small class="text-muted">Historical profile</small></p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="assets/img/doctors/doctors-3.jpg" class="card-img-top" alt="Portrait of an orthodontic leader">
+					<div class="card-body">
+						<h5 class="card-title">Orthodontic Leader</h5>
+						<p class="card-text">Improved diagnostics and treatment planning for alignment care.</p>
+						<p class="card-text"><small class="text-muted">Historical profile</small></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Gallery (lightweight section using existing styles) -->
+		<section class="featured_services" id="gallery_section">
+			<div class="wrapper">
+				<h1>Historical Gallery</h1>
+				<h2>Artifacts, tools, and care through time</h2>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card"><img src="assets/img/gallery/gallery-1.jpg" class="card-img-top" alt="Historic dental tools"></div>
+					</div>
+					<div class="col">
+						<div class="card"><img src="assets/img/gallery/gallery-2.jpg" class="card-img-top" alt="Dental hygiene practices"></div>
+					</div>
+					<div class="col">
+						<div class="card"><img src="assets/img/gallery/gallery-4.jpg" class="card-img-top" alt="Clinic equipment evolution"></div>
+					</div>
+					<div class="col">
+						<div class="card"><img src="assets/img/gallery/gallery-5.jpg" class="card-img-top" alt="Community dental programs"></div>
+					</div>
+					<div class="col">
+						<div class="card"><img src="assets/img/gallery/gallery-7.jpg" class="card-img-top" alt="Orthodontic advances"></div>
+					</div>
+					<div class="col">
+						<div class="card"><img src="assets/img/gallery/gallery-8.jpg" class="card-img-top" alt="Digital dentistry"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Appointment CTA (kept for design parity) -->
+		<section id="appointment_section">
+			<div class="appointment_container">
+				<h1>Interested in Modern Care?</h1>
+				<h2>Book an appointment with our team</h2>
+				<p class="intro-text">From historic roots to present-day excellence—experience compassionate, advanced dental care.</p>
+				<form id="appointmentForm" class="appointment-form">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="fullName">Full Name</label>
+							<input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email Address</label>
+							<input type="email" id="email" name="email" placeholder="your@email.com" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="phone">Phone Number</label>
+							<input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+						</div>
+						<div class="form-group">
+							<label for="date">Preferred Date</label>
+							<input type="date" id="date" name="date" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="time">Preferred Time</label>
+							<select id="time" name="time" required>
+								<option value="">Select a time</option>
+								<option value="9:00">9:00 AM</option>
+								<option value="10:00">10:00 AM</option>
+								<option value="11:00">11:00 AM</option>
+								<option value="2:00">2:00 PM</option>
+								<option value="3:00">3:00 PM</option>
+								<option value="4:00">4:00 PM</option>
+								<option value="5:00">5:00 PM</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="service">Service Type</label>
+							<select id="service" name="service" required>
+								<option value="">Select a service</option>
+								<option value="checkup">General Check-up</option>
+								<option value="cleaning">Teeth Cleaning</option>
+								<option value="whitening">Whitening</option>
+								<option value="implant">Dental Implant</option>
+								<option value="orthodontics">Orthodontics</option>
+								<option value="emergency">Emergency</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-group full-width">
+						<label for="message">Additional Notes</label>
+						<textarea id="message" name="message" placeholder="Tell us about any concerns or special requests..." rows="4"></textarea>
+					</div>
+					<div class="checkbox-group">
+						<label class="checkbox-label">
+							<input type="checkbox" name="consent" required>
+							<span>I agree to the terms and conditions</span>
+						</label>
+					</div>
+					<button type="submit" class="submit-btn">Book Appointment</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer (same as index) -->
+		<footer id="footer_section">
+			<div class="footer_container">
+				<div class="footer-card">
+					<div class="footer-grid">
+						<div class="footer-column">
+							<h3>BrightSmile Dental</h3>
+							<p>Discover the story of dentistry and enjoy modern, compassionate care.</p>
+							<div class="social-links">
+								<a href="#" class="social-icon">f</a>
+								<a href="#" class="social-icon">in</a>
+								<a href="#" class="social-icon">tw</a>
+								<a href="#" class="social-icon">ig</a>
+							</div>
+						</div>
+						<div class="footer-column">
+							<h4>Quick Links</h4>
+							<ul>
+								<li><a href="#About">Overview</a></li>
+								<li><a href="#featured_services">Milestones</a></li>
+								<li><a href="#our_team">Pioneers</a></li>
+								<li><a href="#gallery_section">Gallery</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h4>Services</h4>
+							<ul>
+								<li><a href="#appointment_section">Book Appointment</a></li>
+								<li><a href="#">Teeth Cleaning</a></li>
+								<li><a href="#">Whitening</a></li>
+								<li><a href="#">Dental Implants</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h4>Contact Us</h4>
+							<p><strong>Phone:</strong> (555) 123-4567</p>
+							<p><strong>Email:</strong> info@brightsmile.com</p>
+							<p><strong>Address:</strong> 123 Smile Street, Dental City, DC 12345</p>
+							<p><strong>Hours:</strong> Mon-Fri 9AM-5PM</p>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<p>&copy; 2024 BrightSmile Dental Clinic. All rights reserved.</p>
+						<div class="footer-links">
+							<a href="#">Privacy Policy</a>
+							<a href="#">Terms of Service</a>
+							<a href="#">Cookie Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JS (optional for navbar) -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
