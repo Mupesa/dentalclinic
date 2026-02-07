@@ -150,15 +150,20 @@ p { margin: 0 0 var(--space-2); }
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar-nav {
     gap: 0.5rem !important;
+    width: 100%;
   }
 
   .contact-btn {
     width: 100%;
     margin-top: 1rem;
+    margin-right: 0 !important;
+    display: block;
   }
 
   .nav-link {
@@ -588,12 +593,11 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 .footer-card {
-  background: rgba(255, 255, 255, .95);
+  background: transparent;
   border-radius: var(--radius);
-  border: 1px solid rgba(32,201,151,.2);
-  box-shadow: 0 20px 50px rgba(0,0,0,.2);
+  border: none;
+  box-shadow: none;
   padding: var(--space-5);
-  backdrop-filter: blur(10px);
 }
 
 .footer-grid {
@@ -610,14 +614,14 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 
 .footer-column h3 {
   font-size: 1.3rem;
-  color: var(--brand);
+  color: #ffffff;
   margin-bottom: var(--space-2);
   font-weight: 800;
 }
 
 .footer-column h4 {
   font-size: 1rem;
-  color: var(--brand);
+  color: #ffffff;
   margin-bottom: var(--space-2);
   font-weight: 700;
   text-transform: uppercase;
@@ -625,7 +629,7 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 .footer-column p {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: var(--space-2);
@@ -642,7 +646,7 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 .footer-column ul li a {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 0.95rem;
   transition: all 0.3s ease;
@@ -661,7 +665,7 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 .footer-column ul li a:hover {
-  color: var(--brand);
+  color: #ffffff;
 }
 
 .footer-column ul li a:hover::after {
@@ -699,7 +703,7 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 2px solid #e9ecef;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--space-3);
   display: flex;
   justify-content: space-between;
@@ -709,7 +713,7 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 .footer-bottom p {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.9rem;
   margin: 0;
 }
@@ -720,17 +724,18 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 .footer-links a {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: var(--brand);
+  color: #ffffff;
 }
 
 /* Footer responsive design */
+
 @media (max-width: 768px) {
   .footer-card {
     padding: var(--space-3);
@@ -759,6 +764,7 @@ header .buttons button:last-child:hover { background: rgba(255,255,255,.22); }
 }
 
 /* Contact Page Sections */
+
 #contact_info {
   padding: var(--space-5) var(--space-2);
   background: var(--bg);
